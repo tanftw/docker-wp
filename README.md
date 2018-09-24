@@ -13,6 +13,7 @@ Up And Running Full WordPress Server In Seconds
 
 ## How?
 - Download and install Docker.
+- Clone the project.
 - Run `docker-compose up -d` in the same folder with `docker-compose.yml`.
 - Add `127.0.0.1 wp.test` to your hosts file.
 
@@ -40,3 +41,8 @@ Just go to *localhost:8080*. You don't need to enter either user name or passwor
 **Disable PHPMyAdmin Auto Login**
 
 By default, you'll be logged in automatically, but in production server, you'll want to disable this. Just remove `PMA_USER` and `PMA_PASSWORD` row in `docker-compose.yml`
+
+## Future?
+- Allows user setup domain in `.env` file.
+- Blackfire.io support
+- XDebug support
